@@ -28,10 +28,10 @@ public class Main {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "14");
         capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
         capabilities.setCapability(MobileCapabilityType.FULL_RESET, false);
-        capabilities.setApp("C:\\Users\\Abishek\\Pictures\\CAMION_MOBILE_APP-master\\APP\\TOI-8.4.2.8.apk");
+        capabilities.setApp("C:\\Users\\Abishek\\IdeaProjects\\Mobile_Auto\\src\\main\\resources\\app-uat-release.apk");
         capabilities.setCapability("autoGrantPermissions", true);
-        capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.toi.reader.activities");
-       // capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.toi.reader.app.features.search.recentsearch.view.RecentSearchActivity");
+        capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.yolo.field.force.uat");
+       // capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.yolo.field.force.MainActivity");
 
         AndroidDriver driver = new AndroidDriver(new URL("http://0.0.0.0:4723"), capabilities);
 
@@ -39,7 +39,7 @@ public class Main {
 
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
-        driver.findElement(By.xpath("//android.view.ViewGroup[@resource-id=\"com.toi.reader.activities:id/toolbarItems\"]")).click();
+        driver.findElement(By.xpath("//android.widget.Button[@content-desc='Log In']")).click();
 
     }
 }
