@@ -31,7 +31,7 @@ public class Main {
         capabilities.setApp("C:\\Users\\Abishek\\IdeaProjects\\Mobile_Auto\\src\\main\\resources\\app-uat-release.apk");
         capabilities.setCapability("autoGrantPermissions", true);
         capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.yolo.field.force.uat");
-       // capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.yolo.field.force.MainActivity");
+        capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.yolo.field.force.MainActivity");
 
         AndroidDriver driver = new AndroidDriver(new URL("http://0.0.0.0:4723"), capabilities);
 
@@ -40,6 +40,11 @@ public class Main {
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
         driver.findElement(By.xpath("//android.widget.Button[@content-desc='Log In']")).click();
+
+        driver.findElement(By.xpath("//android.widget.EditText[@resource-id='username']")).sendKeys("gecitid994@jucatyo.com");
+        driver.findElement(By.xpath("//android.widget.EditText[@resource-id='password']")).sendKeys("Test@1234");
+        driver.findElement(By.xpath("//android.widget.Button[@text='Log in']")).click();
+
 
     }
 }
