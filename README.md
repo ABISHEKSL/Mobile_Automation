@@ -1,4 +1,8 @@
 Mobile Automation ReadMe
+
+
+
+
 This document provides instructions and information for running the mobile automation script using Appium. The provided Java code demonstrates an automation workflow for a mobile application.
 
 Prerequisites
