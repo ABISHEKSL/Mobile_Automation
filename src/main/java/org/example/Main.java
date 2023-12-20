@@ -76,5 +76,44 @@ public class Main {
         swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
         driver.perform(Arrays.asList(swipe));
 
+
+
+
+        driver.findElement(By.xpath("//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button[2]")).click();
+        driver.findElement(By.xpath("//android.view.View[@content-desc='Basic Information Organisation Name Business Type Business Category Opening Balance (Optional) Business Location']/android.widget.EditText[1]")).sendKeys("SK Stores");
+        driver.findElement(By.xpath("//android.view.View[@content-desc='Basic Information Organisation Name Business Type Business Category Opening Balance (Optional) Business Location']/android.view.View[1]")).click();
+        driver.findElement(By.xpath("//android.view.View[@content-desc='Retailer']")).click();
+        driver.findElement(By.xpath("//android.view.View[@content-desc='Basic Information Organisation Name Business Type Business Category Opening Balance (Optional) Business Location']/android.view.View[2]")).click();
+        driver.findElement(By.xpath("//android.view.View[@content-desc='E-commerce stores']")).click();
+        driver.findElement(By.xpath("//android.view.View[@content-desc='Basic Information Organisation Name Business Type Business Category Opening Balance (Optional) Business Location']/android.widget.EditText[2]")).sendKeys("5000");
+        driver.findElement(By.xpath("//android.widget.Button[@content-desc='Next']")).click();
+
+        driver.findElement(By.xpath("//android.widget.Button[@content-desc='Address']")).click();
+        driver.findElement(By.xpath("//android.widget.Button[@content-desc='Use Current Location']")).click();
+        driver.findElement(By.xpath("//android.view.View[@content-desc='Shipping Address Pick Location State City / Town Pin Code Address Line 1 Address Line 2 (Optional)']/android.widget.EditText[1]")).sendKeys("Nagapattinam");
+        driver.findElement(By.xpath("//android.view.View[@content-desc='Shipping Address Pick Location State City / Town Pin Code Address Line 1 Address Line 2 (Optional)']/android.widget.EditText[2]")).sendKeys("611001");
+        driver.findElement(By.xpath("//android.view.View[@content-desc='Shipping Address Pick Location State City / Town Pin Code Address Line 1 Address Line 2 (Optional)']/android.widget.EditText[3]")).sendKeys("21, new nort street");
+        driver.findElement(By.xpath("//android.view.View[@content-desc='Shipping Address Pick Location State City / Town Pin Code Address Line 1 Address Line 2 (Optional)']/android.widget.EditText[4]")).sendKeys("mark street, new");
+        driver.findElement(By.xpath("//android.widget.Button[@content-desc='Save']")).click();
+        driver.findElement(By.xpath("//android.view.View[@content-desc='Contact Details Organization Phone Number Organisation Email Organization Address']/android.widget.EditText[1]")).sendKeys("9677428541");
+        driver.findElement(By.xpath("//android.view.View[@content-desc='Contact Details Organization Phone Number Organisation Email Organization Address']/android.widget.EditText[2]")).sendKeys("Justxyz11@gmail.com");
+
+        driver.findElement(By.xpath("//android.widget.Button[@content-desc='Next']")).click();
+        driver.findElement(By.xpath("//android.view.View[@content-desc='GST Treatment GST Status GST Number']/android.view.View[1]")).click();
+        driver.findElement(By.xpath("//android.view.View[@content-desc='Registered']")).click();
+        driver.findElement(By.xpath("//android.widget.EditText")).sendKeys("24AAACC4175D1Z4");
+        driver.findElement(By.xpath("//android.widget.Button[@content-desc='Next']")).click();
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
